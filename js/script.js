@@ -1,11 +1,12 @@
-const city = "alagoinhas";
-
-async function getApi() {
+function getApi() {
+	const city = "Alagoinhas";
 	const apiKey = "62d845a9cba168e29142f2549cba80bd";
-	const apiUrl = `https://api.openweathermap.org/data/1.0/direct?q=${city}&appid=${apiKey}`;
+	const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`;
 
-	return await fetch(apiUrl)
+	return fetch(apiUrl)
 		.then((response) => response.json)
 		.then((data) => console.log(data))
 		.catch((error) => console.error(error));
 }
+
+getApi();
