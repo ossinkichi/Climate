@@ -68,11 +68,16 @@ body {
 
 	width: 443px;
 	padding: 75px 25px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.sun-icon {
-	width: 81px;
-	height: 81px;
+.climate-icon {
+	width: 129px;
+	height: 129px;
 	margin: 0 auto;
 	margin-bottom: 42px;
 }
